@@ -1,0 +1,22 @@
+.bg-section {
+  background-color: #f5f7fa;
+}
+
+.color-green {
+  color: #4CAF4F;
+}
+
+.text-white {
+  color: #FFFFFF !important;
+}
+.card-fixed {
+  width: 208px;
+  height: 182px;
+  margin: 0 auto;
+}
+
+.navbar-link-grey {
+  color: #4D4D4D !important;
+  font-size: 1rem;
+  font-weight: 500;
+}
