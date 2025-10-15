@@ -1,0 +1,65 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" aria-label="Ícone de celular conectado a uma fazenda com plantação e cerca">
+  <defs>
+    <linearGradient id="verde" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2ec27e"></stop>
+      <stop offset="100%" stop-color="#0b8043"></stop>
+    </linearGradient>
+    <style>
+      .linha { stroke: url(#verde); stroke-width: 3; stroke-dasharray: 6 6; fill: none; stroke-linecap: round; }
+      .contorno { stroke: url(#verde); stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .preenchido { fill: url(#verde); }
+      .detalhe { fill: #e9fff2; stroke: #2ec27e; stroke-width: 1.5; }
+      .seta { fill: url(#verde); stroke: none; }
+    </style>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="300" height="300" rx="24" ry="24" fill="#f9fdfb"></rect>
+
+  <!-- Celular -->
+  <rect x="60" y="90" width="60" height="120" rx="10" ry="10" class="contorno"></rect>
+  <circle cx="90" cy="190" r="4" class="preenchido"></circle>
+  <rect x="70" y="100" width="40" height="70" rx="6" ry="6" class="detalhe"></rect>
+
+  <!-- Fazenda (alinhada ao centro do celular) -->
+  <g transform="translate(185,105)">
+    <!-- Celeiro com telhado -->
+    <polygon points="0,60 40,60 20,35" class="preenchido"></polygon>
+    <rect x="0" y="60" width="40" height="40" class="detalhe"></rect>
+    <rect x="14" y="78" width="12" height="22" rx="2" ry="2" class="detalhe"></rect>
+
+    <!-- Silo -->
+    <g transform="translate(45,40)">
+      <rect x="0" y="20" width="20" height="45" rx="4" class="detalhe"></rect>
+      <ellipse cx="10" cy="20" rx="10" ry="5" fill="#e9fff2" stroke="#2ec27e" stroke-width="1.5"></ellipse>
+    </g>
+
+    <!-- Cerca -->
+    <g transform="translate(-15,110)">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#0b8043" stroke-width="2"></line>
+      <line x1="0" y1="6" x2="100" y2="6" stroke="#0b8043" stroke-width="2"></line>
+      <line x1="10" y1="-5" x2="10" y2="11" stroke="#0b8043" stroke-width="2"></line>
+      <line x1="30" y1="-5" x2="30" y2="11" stroke="#0b8043" stroke-width="2"></line>
+      <line x1="50" y1="-5" x2="50" y2="11" stroke="#0b8043" stroke-width="2"></line>
+      <line x1="70" y1="-5" x2="70" y2="11" stroke="#0b8043" stroke-width="2"></line>
+      <line x1="90" y1="-5" x2="90" y2="11" stroke="#0b8043" stroke-width="2"></line>
+    </g>
+
+    <!-- Plantação -->
+    <g transform="translate(-10,125)">
+      <path d="M0,0 Q10,-8 20,0 T40,0 T60,0 T80,0" stroke="#2ec27e" stroke-width="2" fill="none" stroke-linecap="round"></path>
+      <path d="M10,0 Q15,-10 20,0 M30,0 Q35,-10 40,0 M50,0 Q55,-10 60,0 M70,0 Q75,-10 80,0" stroke="#0b8043" stroke-width="1.8" fill="none" stroke-linecap="round"></path>
+      <g transform="translate(0,8)">
+        <path d="M0,0 Q10,-6 20,0 T40,0 T60,0 T80,0" stroke="#2ec27e" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.8"></path>
+        <path d="M10,0 Q15,-8 20,0 M30,0 Q35,-8 40,0 M50,0 Q55,-8 60,0 M70,0 Q75,-8 80,0" stroke="#0b8043" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"></path>
+      </g>
+    </g>
+  </g>
+
+  <!-- Linha tracejada de conexão - saindo de dentro da tela do celular até a fazenda -->
+  <path d="M105 135 C140 120, 165 125, 195 135" class="linha"></path>
+  
+  <!-- Seta no final da linha -->
+  <polygon points="200,135 190,130 190,140" class="seta" transform="rotate(15 200 135)"></polygon>
+</svg>
